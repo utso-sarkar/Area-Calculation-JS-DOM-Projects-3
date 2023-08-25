@@ -1,3 +1,6 @@
 function triangleAreaCalcute(){
-    console.log("button clicked");
+    const baseField =document.getElementById('traingle-base');
+    const baseFieldText =baseField.value;
+    const base = parseFloat(baseFieldText);
+    console.log(base);
 }
