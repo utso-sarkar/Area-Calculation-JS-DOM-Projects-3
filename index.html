@@ -18,7 +18,7 @@
       <div class="flex flex-col lg:flex-row mt-8">
         <!-- shapes -->
 
-        <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
             <!-- container traingle    1 -->
             <div class="card w-96 bg-base-100 shadow-xl">
                 <figure><img src="images/triangle.png" alt="Shoes" /></figure>
@@ -32,36 +32,57 @@
                    <span class=" ml-2  ">CM</span>
 
                 </p>
-                <p>Area:<span id="area-span"></span></p>
+                <p class="text-3xl">Area:<span id="area-span"></span></p>
                   <div class="card-actions w-full">
                     <button onclick="triangleAreaCalcute()" class="btn btn-primary">Calculate</button>
                   </div>
                 </div>
               </div>
             <!-- container  retaingle   2 -->
+            
             <div class="card w-96 bg-base-100 shadow-xl">
-                <figure><img src="images/rectangle.png" alt="Shoes" /></figure>
-                <div class="card-body">
-                  <h2 class="card-title">Rectangle</h2>
-                  <p> </p>
-                  <div class="card-actions justify-end">
-                    <button class="btn btn-primary">Buy Now</button>
-                  </div>
-                </div>
-              </div>
-            <!-- container     3 -->
-            <div class="card w-96 bg-base-100 shadow-xl">
-                <figure><img src="" alt="Shoes" /></figure>
-                <div class="card-body">
-                  <h2 class="card-title">Shoes!</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
-                  <div class="card-actions justify-end">
-                    <button class="btn btn-primary">Buy Now</button>
-                  </div>
-                </div>
-              </div>
+              <figure><img src="images/rectangle.png" alt="Shoes" /></figure>
+              <div class="card-body">
+                <h2 class="card-title text-4xl">Rectangle</h2>
+                <p>Area (A)=W x l</p>
+              <p>
+                 <input type="text" class="border w-20 px-2 bg-gray-200" placeholder="Width" name="" id='rectangle-width'>
+                 <span class=" ml-2  ">CM</span>
+                 <input type="text" class="border w-20 px-2 bg-gray-200" placeholder="Length" name="" id='rectangle-length'>
+                 <span class=" ml-2  ">CM</span>
 
-        </div>
+                 
+
+              </p>
+              <p class="text-3xl">Area:<span id="area-RectSpan"></span></p>
+                <div class="card-actions w-full">
+                  <button onclick="rectangleArea()" class="btn btn-primary">Calculate</button>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- parallelogram section 3-->
+            <div class="card w-96 bg-base-100 shadow-xl">
+              <figure><img src="images/parallelogram.png" alt="Shoes" /></figure>
+              <div class="card-body">
+                <h2 class="card-title text-4xl">parallelogram</h2>
+                <p>Area (A)=b x h</p>
+              <p>
+                 <input type="text" class="border w-20 px-2 bg-gray-200" placeholder="Width" name="" id='para-width'>
+                 <span class=" ml-2  ">CM</span>
+                 <input type="text" class="border w-20 px-2 bg-gray-200" placeholder="Length" name="" id='para-length'>
+                 <span class=" ml-2  ">CM</span>
+
+                 
+
+              </p>
+              <p class="text-3xl">Area:<span id="area-peraSpan"></span></p>
+                <div class="card-actions w-full">
+                  <button onclick="paraCalculationArea()" class="btn btn-primary">Calculate</button>
+                </div>
+              </div>
+            </div>
         <!-- area count  -->
         <div class="w-[400] ">
            <div class="text-4xl">Area Calculation</div>
